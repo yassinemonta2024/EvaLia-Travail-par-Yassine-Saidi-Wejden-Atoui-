@@ -72,29 +72,31 @@ Elle propose des outils modernes, une expérience fluide et une interface soign�
 
 ### 📁 Organisation du code
 
-/
-├── index.html # Page d’accueil
-├── pratiquer.html # Simulation d’entretien
-├── banque.html # Banque de questions
-├── suivi.html # Historique et statistiques
-├── conseils.html # Astuces (optionnel)
-│
+## 🗂️ Organisation du code
+
+```text
+.
+├── index.html         # Page d’accueil
+├── pratiquer.html     # Simulation d’entretien
+├── banque.html        # Banque de questions
+├── suivi.html         # Historique et statistiques
+├── conseils.html      # Astuces (optionnel)
 ├── css/
-│ └── style.css # Styles globaux + thème sombre
-│
+│   └── style.css      # Styles globaux + thème sombre
 ├── js/
-│ ├── donnees.js # Toutes les questions + réponses
-│ ├── pratiquer.js # Logique de la simulation (timer, navigation…)
-│ ├── banque.js # Filtrage, affichage des réponses, notes perso
-│ ├── suivi.js # Enregistrement et affichage de l’historique
-│ └── ui.js # Composants UI (menus, animations…)
-│
-└── assets/ # Logos, illustrations, icônes
+│   ├── donnees.js     # Toutes les questions + réponses
+│   ├── pratiquer.js   # Logique de la simulation (timer, navigation…)
+│   ├── banque.js      # Filtrage, réponses, notes perso
+│   ├── suivi.js       # Suivi et statistiques
+│   └── ui.js          # Composants UI (menus, animations…)
+└── assets/
+    └── ...            # Logos, illustrations, icônes
 
 
 
 
----
+
+
 
 ## 🔍 Pourquoi ces choix ?
 
