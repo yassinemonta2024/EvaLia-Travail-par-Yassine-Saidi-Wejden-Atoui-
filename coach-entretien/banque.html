@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banque de questions</title>
+  <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="entete">
+    <div class="entete-top">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Logo Coach">
+        <span>Coach d'entretien</span>
+      </div>
+      <nav class="nav">
+        <a href="accueil.html">Accueil</a>
+        <a href="pratiquer.html">Pratiquer</a>
+        <a href="banque.html" class="actif">Banque de questions</a>
+        <a href="suivi.html">Suivi</a>
+        <a href="conseils.html">Conseils</a>
+      </nav>
+      <button id="btnTheme" class="btn-second"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    </div>
+  </header>
+  <main class="page">
+    <section class="bloc">
+      <h1>Banque de questions</h1>
+      <p class="info">Filtrez par thème, notez vos idées et gardez une trace de vos réponses.</p>
+      <div class="filtres">
+        <input id="recherche" class="champ-texte" type="text" placeholder="Rechercher une question">
+        <select id="filtreCat" class="select">
+          <option value="toutes">Toutes les catégories</option>
+          <option value="Technique">Technique</option>
+          <option value="RH">RH</option>
+          <option value="Comportemental">Comportemental</option>
+          <option value="Stage">Stage</option>
+        </select>
+        <select id="filtreDif" class="select">
+          <option value="tous">Tous les niveaux</option>
+          <option value="facile">facile</option>
+          <option value="moyen">moyen</option>
+          <option value="difficile">difficile</option>
+        </select>
+      </div>
+      <div id="liste" class="liste-questions"></div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 EvaLia Préparez, pratiquez, réussissez. ^travail par Yassine Saidi et Wejden Atoui^</p>
+  </footer>
+  <script src="js/donnees.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/banque.js"></script>
+</body>
+</html>

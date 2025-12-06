@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulation d'entretien</title>
+  <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="entete">
+    <div class="entete-top">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Logo Coach">
+        <span>Coach d'entretien</span>
+      </div>
+      <nav class="nav">
+        <a href="accueil.html">Accueil</a>
+        <a href="pratiquer.html" class="actif">Pratiquer</a>
+        <a href="banque.html">Banque de questions</a>
+        <a href="suivi.html">Suivi</a>
+        <a href="conseils.html">Conseils</a>
+      </nav>
+      <button id="btnTheme" class="btn-second"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    </div>
+  </header>
+  <main class="page">
+    <section class="bloc">
+      <h1>Simulation d'entretien</h1>
+      <p class="info">Choisissez un mode et lancez une série de questions avec timer.</p>
+      <div class="filtres" style="margin-top:12px;">
+        <input id="nomSess" class="champ-texte" type="text" placeholder="Votre prénom ou surnom">
+        <select id="catSess" class="select">
+          <option value="toutes">Toutes les catégories</option>
+          <option value="Technique">Technique</option>
+          <option value="RH">RH</option>
+          <option value="Comportemental">Comportemental</option>
+          <option value="Stage">Stage</option>
+        </select>
+        <select id="nbSess" class="select">
+          <option value="5">5 questions</option>
+          <option value="8">8 questions</option>
+          <option value="10">10 questions</option>
+        </select>
+        <select id="tmSess" class="select">
+          <option value="60">60 s/question</option>
+          <option value="90">90 s/question</option>
+          <option value="120">120 s/question</option>
+        </select>
+        <button id="btnGo" class="btn"><i class="fa-solid fa-play"></i> Lancer</button>
+      </div>
+      <div id="zoneSess" class="zone-contenu"></div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 EvaLia Préparez, pratiquez, réussissez. ^travail par Yassine Saidi et Wejden Atoui^</p>
+  </footer>
+  <script src="js/donnees.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pratiquer.js"></script>
+</body>
+</html>

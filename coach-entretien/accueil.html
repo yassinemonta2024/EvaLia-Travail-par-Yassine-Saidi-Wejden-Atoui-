@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coach d'entretien</title>
+  <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="entete">
+    <div class="entete-top">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Entraînement Avant Entretien">
+        <span>EvaLia:Coach D'Entretien</span>
+      </div>
+      <nav class="nav">
+        <a href="accueil.html" class="actif">Accueil</a>
+        <a href="pratiquer.html">Pratiquer</a>
+        <a href="banque.html">Banque de questions</a>
+        <a href="suivi.html">Suivi</a>
+        <a href="conseils.html">Conseils</a>
+      </nav>
+      <button id="btnTheme" class="btn-second"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    </div>
+  </header>
+  <main class="page">
+    <section class="entete-hero">
+      <div class="bloc">
+        <div class="badge"><i class="fa-solid fa-sparkles"></i> Nouveau</div>
+        <h1>Préparez vos entretiens simplement</h1>
+        <p>Entraînez-vous sur des questions ciblées, suivez votre progression et gagnez en confiance avant vos entretiens.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;">
+          <a class="btn" href="pratiquer.html">Commencer une session</a>
+          <a class="btn-second" href="banque.html">Voir les questions</a>
+        </div>
+      </div>
+      <div class="carte">
+        <div class="badge">Simulation rapide</div>
+        <h3 style="margin-top:10px;">Entraînement guidé</h3>
+        <ul class="points">
+          <li><i class="fa-solid fa-microphone-lines"></i>Questions orales ou écrites</li>
+          <li><i class="fa-solid fa-bolt"></i>Timer ajustable</li>
+          <li><i class="fa-solid fa-chart-line"></i>Statistiques simples</li>
+        </ul>
+        <div class="bloc-img" style="margin-top:14px;">
+          <img src="assets/img/hero.png" alt="Simulation">
+        </div>
+      </div>
+    </section>
+    <section style="margin-top:28px;">
+      <h2>Fonctionnalités</h2>
+      <div class="fonction">
+        <div class="carte">
+          <h3><i class="fa-solid fa-play"></i> Pratique guidée</h3>
+          <p class="info">Choisissez une catégorie, un nombre de questions et lancez une session chronométrée.</p>
+        </div>
+        <div class="carte">
+          <h3><i class="fa-solid fa-database"></i> Banque organisée</h3>
+          <p class="info">Filtrez par thème ou difficulté et ajoutez vos notes personnelles sur chaque question.</p>
+        </div>
+        <div class="carte">
+          <h3><i class="fa-solid fa-heart-pulse"></i> Suivi simple</h3>
+          <p class="info">Visualisez vos scores moyens et l'historique de vos sessions enregistrées.</p>
+        </div>
+      </div>
+    </section>
+    <section style="margin-top:28px;">
+      <h2>Témoignages</h2>
+      <div class="temoins">
+        <div class="carte temoin">
+          <img src="assets/img/profile1.jpg" alt="Profil 1">
+          <div>
+            <strong>Lina, étudiante</strong>
+            <p class="info">"Les simulations m'ont aidée à structurer mes réponses et à gérer le stress."</p>
+          </div>
+          <i class="fa-solid fa-quote-left"></i>
+        </div>
+        <div class="carte temoin">
+          <img src="assets/img/profile2.jpg" alt="Profil 2">
+          <div>
+            <strong>Thomas, alternant</strong>
+            <p class="info">"J'aime la banque de questions et les notes que je peux garder pour chaque sujet."</p>
+          </div>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="carte temoin">
+          <img src="assets/img/profile3.jpg" alt="Profil 3">
+          <div>
+            <strong>Camille, junior dev</strong>
+            <p class="info">"Le suivi des sessions m'a permis de voir mes progrès en quelques jours."</p>
+          </div>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 EvaLia Préparez, pratiquez, réussissez. ^travail par Yassine Saidi et Wejden Atoui^</p>
+  </footer>
+  <script src="js/ui.js"></script>
+</body>
+</html>
